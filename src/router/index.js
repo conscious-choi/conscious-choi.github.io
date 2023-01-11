@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/header';
 import {createBrowserRouter, Outlet} from 'react-router-dom';
-import Rollout from '../routes/rollout';
+import Main from '../routes/main';
 
 export const GlobalRouter = createBrowserRouter([
     {
@@ -9,10 +9,15 @@ export const GlobalRouter = createBrowserRouter([
         element: (
           <>
               <Header />
-              <Rollout />
               <Outlet />
           </>
         ),
+        children: [
+            {
+                path: "/",
+                element: <Main />
+            }
+        ]
     },
 ])
 

@@ -1,15 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import { Flex, Screen, Row, Text } from '../../components';
-import {CircleLogo} from '../../contents/logo';
 import styled from 'styled-components';
 import spaceAnimate from './spaceAnimation';
 import Typewriter from 'typewriter-effect';
+import { MainEvent } from '../../contexts';
 
 export const Welcome = ({}) => {
+    const {goMain, setGoMain} = MainEvent();
     return (
-        <Screen height="100%" align="center" justify="center">
-            <CodeCursor />
-            <VoyageBackground />
+        <Screen height="100%" align="center" justify="center" bg={goMain && "white"} position="absolute" style={{transition: 'all 500ms ease-in-out'}}>
+            <CodeCursor goMain={goMain} setGoMain={setGoMain} />
+            <VoyageBackground id={"welcome"} />
         </Screen>
     )
 };
@@ -27,23 +28,26 @@ export const Writer = styled(Flex)`
     background-color: rgba(0,0,0,0);
 `;
 
-export const CodeCursor = ({}) => {
+export const CodeCursor = ({goMain, setGoMain}) => {
     useEffect(() => {
         const enter = () => {
             let enterbtnsibling = document.getElementsByClassName('Typewriter__wrapper')[0];
             let enterbtn = document.createElement("div");
+            enterbtn.addEventListener("click", () => setGoMain(true))
             setTimeout(() => enterbtn.style = `
                 opacity: 1;
-                transition: all 1000ms ease-in-out;
+                transition: all 1500ms ease-in-out;
                 font-size: 20px;
-                color: white;
-                background-color: rgba(30, 30, 30, 0.85);
+                color: #00dcff;
+                background-color: rgba(30, 30, 30, 0.75);
                 padding: 10px 30px 10px 30px;
                 border-radius: 20px;
                 cursor: pointer;
+                width: 276px;
                 margin: auto;
-                margin-top: 30px;`
-            , 102000);
+                margin-top: 50px;
+                user-select: none;`
+            , 1) //102000);
             enterbtn.innerText = "Enter the Consciousness"
             enterbtn.style.fontSize = "20px"
             enterbtn.style.transition = "all 1000ms ease-in-out"
@@ -53,7 +57,7 @@ export const CodeCursor = ({}) => {
         enter();
     }, [])
     return (
-        <Writer>
+        <Writer style={{opacity: goMain ? 0 : 1, transition: "all 500ms ease-in-out"}}>
             <Typewriter
                 onInit={(typewriter) => {
                     typewriter.typeString('Welcome to Consciousness')
@@ -136,17 +140,17 @@ export const CodeCursor = ({}) => {
     )
 }
 
-export const VoyageBackground = ({}) => {
+export const VoyageBackground = ({position = "fixed", startTime = 90000, id, transitionTime = '15s'}) => {
     const [opacity, setOpacity] = useState(0);
     useEffect(() => {
         const animator = () => {
-            setTimeout(() => setOpacity(1), 90000)
-            spaceAnimate("voyage");
+            setTimeout(() => setOpacity(1), startTime)
+            spaceAnimate(id);
         }
         animator();
     }, [])
     return (
-        <Screen position="fixed" height="100vh" id="voyage" zIndex={0} opacity={opacity} style={{transition: 'all 15s'}}>
+        <Screen position={position} height="100vh" id={id} zIndex={0} opacity={opacity} style={{transition: `all ${transitionTime} ease-in-out`}}>
         </Screen>
     )
 }
