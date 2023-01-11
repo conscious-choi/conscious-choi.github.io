@@ -28,6 +28,30 @@ export const Writer = styled(Flex)`
 `;
 
 export const CodeCursor = ({}) => {
+    useEffect(() => {
+        const enter = () => {
+            let enterbtnsibling = document.getElementsByClassName('Typewriter__wrapper')[0];
+            let enterbtn = document.createElement("div");
+            setTimeout(() => enterbtn.style = `
+                opacity: 1;
+                transition: all 1000ms ease-in-out;
+                font-size: 20px;
+                color: white;
+                background-color: rgba(30, 30, 30, 0.85);
+                padding: 10px 30px 10px 30px;
+                border-radius: 20px;
+                cursor: pointer;
+                margin: auto;
+                margin-top: 30px;`
+            , 102000);
+            enterbtn.innerText = "Enter the Consciousness"
+            enterbtn.style.fontSize = "20px"
+            enterbtn.style.transition = "all 1000ms ease-in-out"
+            enterbtn.style.opacity = "0"
+            enterbtnsibling.parentNode.appendChild(enterbtn)
+        };
+        enter();
+    }, [])
     return (
         <Writer>
             <Typewriter
