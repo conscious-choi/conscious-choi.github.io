@@ -4,7 +4,7 @@ const GlobalContext = createContext();
 
 export const GlobalProvider = ({children}) => {
     const [theme, setTheme] = useState('dark');
-    const [goMain, setGoMain] = useState(true);
+    const [goMain, setGoMain] = useState(false);
     return (
         <GlobalContext.Provider
             value={{
