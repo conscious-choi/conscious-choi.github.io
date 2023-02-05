@@ -3,7 +3,7 @@ import {Flex, Col, Text, Image, Row} from '../../components';
 
 export const BigFeed = ({}) => {
     return (
-        <Col padding="50px" br="50px" bg={"rgba(0, 0, 0, 0.1)"} width="100%" style={{backdropFilter: "blur(1.5px)"}} mb="30px">
+        <Col padding="50px" br="50px" bg={"rgba(0, 0, 0, 0.25)"} width="100%" style={{backdropFilter: "blur(1.5px)"}} mb="30px">
             <Text size="50px" lh={"65px"} weight="700" ff="Nanum Myeongjo">Spiking neural network</Text>
             <Row mt="20px" justify="space-between">
                 <Row>
