@@ -47,7 +47,7 @@ export const CodeCursor = ({goMain, setGoMain}) => {
                 margin: auto;
                 margin-top: 50px;
                 user-select: none;`
-            , 1) //102000);
+            , 102000) //102000);
             enterbtn.innerText = "Enter the Consciousness"
             enterbtn.style.fontSize = "20px"
             enterbtn.style.transition = "all 1000ms ease-in-out"
@@ -59,6 +59,10 @@ export const CodeCursor = ({goMain, setGoMain}) => {
     return (
         <Writer style={{opacity: goMain ? 0 : 1, transition: "all 500ms ease-in-out"}}>
             <Typewriter
+                options = {{
+                    delay : 50,
+                    deleteSpeed	: 10
+                }}
                 onInit={(typewriter) => {
                     typewriter.typeString('Welcome to Consciousness')
                     .pauseFor(1500)
