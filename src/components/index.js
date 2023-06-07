@@ -88,7 +88,7 @@ export const Flex = styled.div`
     ${(props) => (props.bgday || props.bgdark) && `{
         background-color: ${ThemeEvent().theme === "day" ? props.bgday : props.bgdark};
     }`};
-    transition: all 500ms;
+    transition: ${(props) => props.transition ? props.transition : "all 500ms"};
 `;
 
 export const Screen = styled(Flex)`

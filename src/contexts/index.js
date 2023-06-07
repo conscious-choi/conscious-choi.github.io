@@ -4,12 +4,15 @@ const GlobalContext = createContext();
 
 export const GlobalProvider = ({children}) => {
     const [theme, setTheme] = useState('dark');
-    const [goMain, setGoMain] = useState(false);
+    const [showMain, setShowMain] = useState(window.history.length <= 2 && window.location.pathname == "/" ? false : true)
+    const [goMain, setGoMain] = useState(window.history.length <= 2 && window.location.pathname == "/" ? false : true);
     return (
         <GlobalContext.Provider
             value={{
                 theme: theme, 
                 setTheme: setTheme,
+                showMain: showMain,
+                setShowMain: setShowMain,
                 goMain: goMain,
                 setGoMain: setGoMain
             }}>
@@ -24,8 +27,8 @@ export const ThemeEvent = () => {
 }
 
 export const MainEvent = () => {
-    const {goMain, setGoMain} = useContext(GlobalContext);
-    return {goMain, setGoMain};
+    const {goMain, setGoMain, showMain, setShowMain} = useContext(GlobalContext);
+    return {goMain, setGoMain, showMain, setShowMain};
 }
 
 export default GlobalProvider;

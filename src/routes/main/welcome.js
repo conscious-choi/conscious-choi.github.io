@@ -8,9 +8,10 @@ import { MainEvent } from '../../contexts';
 export const Welcome = ({}) => {
     const {goMain, setGoMain} = MainEvent();
     return (
-        <Screen height="100%" align="center" justify="center" bg={goMain && "white"} position="absolute" style={{transition: 'all 500ms ease-in-out'}}>
+        <Screen height="100%" align="center" justify="center" opacity={!goMain ? 1 : 0} position="absolute" style={{backgroundColor: goMain && "white"}} transition='all 500ms ease-in-out'>
             <CodeCursor goMain={goMain} setGoMain={setGoMain} />
             <VoyageBackground id={"welcome"} />
+            <SkipBtn setGoMain={setGoMain} />
         </Screen>
     )
 };
@@ -27,6 +28,33 @@ export const Writer = styled(Flex)`
     z-index: 1;
     background-color: rgba(0,0,0,0);
 `;
+
+export const SkipBtn = ({setGoMain}) => {
+    const [opacity, setOpacity] = useState(0);
+    const [color, setColor] = useState("white");
+    useEffect(() => {
+        const opaciter = () => {
+            setTimeout(() => setOpacity(1), 3000);
+        };
+        opaciter();
+    }, [])
+    return (
+        <Row
+            onMouseOver={() => setColor("#00dcff")} onMouseLeave={() => setColor("white")} position="absolute"
+            style={{right: '5%', bottom: '10%'}} to="hover" align="center" opacity={opacity}
+            transition="all 1000ms ease-in-out" zIndex="10000" onClick={() => setGoMain(true)}
+        >
+            <Text size="20px" weight="300" color={color}>
+                Skip Tutorial
+            </Text>
+            <Flex ml="15px" align="center">
+                <Flex style={{width: 35, height:1}} bg={color} />
+                <Flex style={{width: 12.5, height: 1, transform: "rotate(45deg)", right: -2, top: 5.3}} position="absolute" bg={color} />
+                <Flex style={{width: 12.5, height: 1, transform: "rotate(135deg)", right: -2, top: 13.8}} position="absolute" bg={color} />
+            </Flex>
+        </Row>
+    )
+}
 
 export const CodeCursor = ({goMain, setGoMain}) => {
     useEffect(() => {
@@ -47,7 +75,7 @@ export const CodeCursor = ({goMain, setGoMain}) => {
                 margin: auto;
                 margin-top: 50px;
                 user-select: none;`
-            , 102000) //102000);
+            , 61000) //102000);
             enterbtn.innerText = "Enter the Consciousness"
             enterbtn.style.fontSize = "20px"
             enterbtn.style.transition = "all 1000ms ease-in-out"
@@ -144,7 +172,7 @@ export const CodeCursor = ({goMain, setGoMain}) => {
     )
 }
 
-export const VoyageBackground = ({position = "fixed", startTime = 90000, id, transitionTime = '15s'}) => {
+export const VoyageBackground = ({position = "fixed", startTime = 57000, id, transitionTime = '15s'}) => {
     const [opacity, setOpacity] = useState(0);
     useEffect(() => {
         const animator = () => {

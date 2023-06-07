@@ -5,18 +5,17 @@ import Welcome from './welcome';
 import Main from './main';
 
 export const MainPage = ({}) => {
-    const [main, setMain] = useState(false);
-    const {goMain} = MainEvent();
+    const {goMain, showMain, setShowMain} = MainEvent();
     useEffect(() => {
         const mainer = () => {
-            setTimeout(() => goMain && setMain(true), 1000);
+            setTimeout(() => goMain && setShowMain(true), 1000);
         }
         mainer();
-    })
+    }, [goMain])
     return (
         <Screen height="100vh" bg="white">
-            {!main && <Welcome />}
-            {goMain && <Main main={main} />}
+            {!showMain && <Welcome />}
+            {goMain && <Main main={showMain} />}
         </Screen>
     )
 };
