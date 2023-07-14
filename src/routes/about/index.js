@@ -14,7 +14,7 @@ const A = styled(Link)`
 
 export const About = () => {
     return (
-        <Screen height="100vh" padding="15%">
+        <Screen height="100vh" style={{justifyContent: "center"}} pt="15%">
             <Col>
                 <Col mb="50px" align="center">
                     <Text size="38px" mb="20px" weight="600">Suhyung Choi</Text>
