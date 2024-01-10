@@ -56,6 +56,12 @@ export const About = () => {
                             <Image width="100%" height="100%" src={qlid} />
                         </Flex>
                         <Col ml="30px">
+                            <Text size="18px" weight="600" mb="10px"><A>Learning Object Appearance and Motion Dynamics with Object-Centric Representations</A></Text>
+                            <Text size="18px" weight="300" mb="10px" opacity="0.8">Yeon-Ji Song, Hyunseo Kim, <span style={{fontWeight: 600}}>Suhyung Choi</span>, Jin-Hwa Kim*, Byoung-Tak Zhang*.</Text>
+                            <Text size="18px" weight="300" mb="10px"><span style={{fontWeight: 600}}>NeurIPS Workshop</span> on Causal Representation Learning, 2023</Text>
+                            <Text size="18px" weight="300" ><A>Paper</A> / <A target="_blank" to="https://crl-workshop.github.io/">Workshop</A></Text>
+                        </Col>
+                        <Col ml="30px">
                             <Text size="18px" weight="600" mb="10px"><A>Causal Dynamics Learning with Quantized Local Independence Discovery</A></Text>
                             <Text size="18px" weight="300" mb="10px" opacity="0.8">Inwoo Hwang, Yunhyeok Kwak, <span style={{fontWeight: 600}}>Suhyung Choi</span>, Byoung-Tak Zhang*, <A target="_blank" to="https://www.sanghacklee.me/">Sanghack Lee*</A>.</Text>
                             <Text size="18px" weight="300" mb="10px"><span style={{fontWeight: 600}}>ICML Workshop</span> on Spurious Correlations, Invariance, and Stability, 2023</Text>
