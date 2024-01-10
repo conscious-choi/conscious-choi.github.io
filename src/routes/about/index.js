@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {Flex, Row, Text, Screen, Col, Image, Link} from "../../components";
 import qlid from "../../contents/about/qlid.png"
+import causal_dynamcis from "../../contents/about/causal_dynamcis.png"
 
 const A = styled(Link)`
     cursor: pointer;
@@ -53,7 +54,7 @@ export const About = () => {
                     <Text size="25px" mb="30px" weight="600" style={{alignSelf: "center"}}>Publications</Text>
                     <Row align="center">
                         <Flex width="170px" height="120px" overflow="hidden" br="20px" align="center" justify="center">
-                            <Image width="100%" height="100%" src={qlid} />
+                            <Image width="100%" height="100%" src={causal_dynamcis} />
                         </Flex>
                         <Col ml="30px">
                             <Text size="18px" weight="600" mb="10px"><A>Learning Object Appearance and Motion Dynamics with Object-Centric Representations</A></Text>
@@ -61,6 +62,11 @@ export const About = () => {
                             <Text size="18px" weight="300" mb="10px"><span style={{fontWeight: 600}}>NeurIPS Workshop</span> on Causal Representation Learning, 2023</Text>
                             <Text size="18px" weight="300" ><A>Paper</A> / <A target="_blank" to="https://crl-workshop.github.io/">Workshop</A></Text>
                         </Col>
+                    </Row>
+                    <Row align="center">
+                        <Flex width="170px" height="120px" overflow="hidden" br="20px" align="center" justify="center">
+                            <Image width="100%" height="100%" src={qlid} />
+                        </Flex>
                         <Col ml="30px">
                             <Text size="18px" weight="600" mb="10px"><A>Causal Dynamics Learning with Quantized Local Independence Discovery</A></Text>
                             <Text size="18px" weight="300" mb="10px" opacity="0.8">Inwoo Hwang, Yunhyeok Kwak, <span style={{fontWeight: 600}}>Suhyung Choi</span>, Byoung-Tak Zhang*, <A target="_blank" to="https://www.sanghacklee.me/">Sanghack Lee*</A>.</Text>
