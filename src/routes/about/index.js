@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {Flex, Row, Text, Screen, Col, Image, Link} from "../../components";
 import qlid from "../../contents/about/qlid.png"
-import causal_dynamcis from "../../contents/about/causal_dynamcis.png"
+import causal_dynamcis from "../../contents/about/causal_dynamics.png"
 
 const A = styled(Link)`
     cursor: pointer;
