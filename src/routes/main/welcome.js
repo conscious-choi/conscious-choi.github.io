@@ -4,13 +4,14 @@ import styled from 'styled-components';
 import spaceAnimate from './spaceAnimation';
 import Typewriter from 'typewriter-effect';
 import { MainEvent } from '../../contexts';
+import { useLocation } from 'react-router-dom';
 
 export const Welcome = ({}) => {
     const {goMain, setGoMain} = MainEvent();
     return (
         <Screen height="100%" align="center" justify="center" opacity={!goMain ? 1 : 0} position="absolute" style={{backgroundColor: goMain && "white"}} transition='all 500ms ease-in-out'>
             <CodeCursor goMain={goMain} setGoMain={setGoMain} />
-            <VoyageBackground id={"welcome"} />
+            {/* <VoyageBackground id={"welcome"} /> */}
             <SkipBtn setGoMain={setGoMain} />
         </Screen>
     )
@@ -174,13 +175,14 @@ export const CodeCursor = ({goMain, setGoMain}) => {
 
 export const VoyageBackground = ({position = "fixed", startTime = 57000, id, transitionTime = '15s'}) => {
     const [opacity, setOpacity] = useState(0);
+    const location = useLocation()
     useEffect(() => {
         const animator = () => {
             setTimeout(() => setOpacity(1), startTime)
             spaceAnimate(id);
         }
-        animator();
-    }, [])
+        animator()
+    }, [location.pathname === "/"])
     return (
         <Screen position={position} height="100vh" id={id} zIndex={0} opacity={opacity} style={{transition: `all ${transitionTime} ease-in-out`}}>
         </Screen>

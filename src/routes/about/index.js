@@ -15,14 +15,16 @@ const A = styled(Link)`
 
 export const About = () => {
     return (
-        <Screen height="100vh" style={{justifyContent: "center"}} pt="15%">
-            <Col>
-                <Col mb="50px" align="center">
-                    <Text size="38px" mb="20px" weight="600">Suhyung Choi</Text>
-                    <Text weight="300" mt="10px" size="18px">Master Student @ <A to="https://snu.ac.kr" target="_blank">Seoul National University</A></Text>
-                    <Text weight="300" mt="10px" size="18px"><A to="https://gsai.snu.ac.kr/" target="_blank">Graduate School of Artificial Intelligence</A></Text>
-                    {/* <Text weight="300" mt="10px" size="18px"><A href="https://bi.snu.ac.kr/" target="_blank">Bio Intelligence Lab</A></Text> */}
-                    <Text weight="300" mt="10px" size="18px"><A to="mailto:s.choi@snu.ac.kr">s.choi@snu.ac.kr</A></Text>
+        <Screen height="100vh" style={{justifyContent: "center"}} pt="12.5%">
+            <Col width="60%">
+                <Row mb="70px" align="flex-start" justify="space-between">
+                    <Col>
+                        <Text size="38px" mb="20px" weight="600">SUHYUNG CHOI</Text>
+                        <Text weight="300" mt="10px" size="18px">Master Student @ <A to="https://snu.ac.kr" target="_blank">Seoul National University</A></Text>
+                        <Text weight="300" mt="10px" size="18px"><A to="https://gsai.snu.ac.kr/" target="_blank">Graduate School of Artificial Intelligence (IPAI)</A></Text>
+                        <Text weight="300" mt="10px" size="18px"><A to="https://aiis.snu.ac.kr/" target="_blank">Artificial Intelligence Institute of Seoul National University (AIIS)</A></Text>
+                        <Text weight="300" mt="10px" size="18px"><A to="mailto:s.choi@snu.ac.kr">s.choi@snu.ac.kr</A></Text>
+                    </Col>
                     <Row mt="30px">
                         <A to="https://www.github.com/conscious-choi" target="_blank">
                             <Flex align="center" justify="center" width="40px" height="40px" to="svg{path{fill: #00dcff}}">
@@ -32,53 +34,61 @@ export const About = () => {
                             </Flex>
                         </A>
                     </Row>
-                </Col>
-                <Col mb="70px" align="center">
+                </Row>
+                <Col mb="70px" align="flex-start">
                     <Text size="25px" mb="20px" weight="600">About</Text>
-                    <Text size="18px" weight="300" lh="1.5" mb="10px">Hi! I'm a graduate student in Biointelligence Lab at the Seoul National University, advised by <A target="_blank" to="https://bi.snu.ac.kr">Byoung-Tak Zhang</A>.</Text>
+                    <Text size="18px" weight="300" lh="1.5">
+                        Hello! I'm Suhyung Choi. I am currently a graduate student at the Biointelligence Lab, Seoul National University, 
+                        advised by Professor Byoung-Tak Zhang. <span style={{color: "#00dcff"}}>My research explores the essence of intelligence,
+                        ranging from foundational aspects to the complexities of consciousness. In the realm of artificial intelligence,
+                        my work spans a broad spectrum, including Neuroscience-Inspired AI and pioneering developments in Next Generation Neural Networks.</span>
+                        If you have any questions or would like to share feedback, please feel free to email me at any time.
+                    </Text>
+                    {/* <Text size="18px" weight="300" lh="1.5" mb="10px">Hi! I'm a graduate student in Biointelligence Lab at the Seoul National University, advised by <A target="_blank" to="https://bi.snu.ac.kr">Byoung-Tak Zhang</A>.</Text>
                     <Text size="18px" weight="300" lh="1.5">My research interest is based on <span style={{color: "#00dcff"}}>the core of intelligence, from fundamental intelligence to the consciousness of our mind.</span></Text>
-                    <Text size="18px" weight="300" lh="1.5" mb="10px">In the aspect of artificial intelligence, <span style={{color: "#00dcff"}}>I'm widely researching from Neuroscience-Inspired A.I to the Next Generation Neural Networks.</span></Text>
+                    <Text size="18px" weight="300" lh="1.5" mb="10px">In the aspect of artificial intelligence, <span style={{color: "#00dcff"}}>I'm widely researching from Neuroscience-Inspired A.I to the Next Generation Neural Networks.</span></Text> */}
                     {/* <Text size="18px" weight="300" lh="1.5" mb="10px">Before starting my joint MS / Ph.D. program at Seoul National University, I graduated from <A target="_blank" to="https://korea.ac.kr">Korea University</A> with a Bachelor's in Artificial Intellgence and Business Administration.</Text> */}
                 </Col>
                 <Col mb="70px">
-                    <Text size="25px" mb="25px" weight="600" style={{alignSelf: "center"}}>Education</Text>
-                    <Text size="20px" weight="500" mb="10px">Seoul National University</Text>
-                    <Text size="18px" weight="300" lh="1.5"mb="10px">Joint MS / Ph.D. Student in <A target="_blank" to="https://gsai.snu.ac.kr">SNU IPAI<br/>(AI Graduate School supported by the Ministry of Science and ICT at South Korea Government)</A></Text>
+                    <Text size="25px" mb="25px" weight="600" style={{alignSelf: "flex-start"}}>Education</Text>
+                    <Text size="18px" weight="500" mb="10px">Seoul National University</Text>
+                    <Text size="15px" weight="300" lh="1.5"mb="10px">Joint MS / Ph.D. Student in <A target="_blank" to="https://gsai.snu.ac.kr">Interdisciplinary Program in Artificial Intelligence
+                    <br/>(Graduate School of Artificial Intelligence)</A></Text>
                     <Text style={{fontStyle: "italic"}} opacity="0.7" mb="30px">2023 ~ Present</Text>
-                    <Text size="20px" weight="500" mb="10px">Korea University</Text>
-                    <Text size="18px" weight="300" lh="1.5" mb="0px">BEngg, Interdisciplinary Major in Artificial Intelligence (2nd Major, Seoul)</Text>
-                    <Text size="18px" weight="300" lh="1.5" mb="10px">BBA, Digital Business in Division of Convergence Business (1st Major, Sejong)</Text>
+                    <Text size="18px" weight="500" mb="10px">Korea University</Text>
+                    <Text size="15px" weight="300" lh="1.5" mb="0px">BEngg, Interdisciplinary Major in Artificial Intelligence (Second Major, Seoul)</Text>
+                    <Text size="15px" weight="300" lh="1.5" mb="10px">BBA, Digital Business in Division of Convergence Business (First Major, Sejong)</Text>
                     <Text style={{fontStyle: "italic"}} opacity="0.7">2018 ~ 2022</Text>
                 </Col>
-                <Col mb="50px">
-                    <Text size="25px" mb="30px" weight="600" style={{alignSelf: "center"}}>Publications</Text>
+                <Col mb="70px">
+                    <Text size="25px" mb="30px" weight="600" style={{alignSelf: "flex-start"}}>Publications</Text>
                     <Row align="center">
-                        <Flex width="170px" height="120px" overflow="hidden" br="20px" align="center" justify="center">
-                            <Image width="100%" height="100%" src={causal_dynamcis} />
+                        <Flex width="150px" height="100px" overflow="hidden" br="20px" align="center" justify="center">
+                            <Image width="100%" height="100%" of="cover" src={causal_dynamcis} />
                         </Flex>
                         <Col ml="30px">
                             <Text size="18px" weight="600" mb="10px"><A>Learning Object Appearance and Motion Dynamics with Object-Centric Representations</A></Text>
-                            <Text size="18px" weight="300" mb="10px" opacity="0.8">Yeon-Ji Song, Hyunseo Kim, <span style={{fontWeight: 600}}>Suhyung Choi</span>, Jin-Hwa Kim*, Byoung-Tak Zhang*.</Text>
-                            <Text size="18px" weight="300" mb="10px"><span style={{fontWeight: 600}}>NeurIPS Workshop</span> on Causal Representation Learning, 2023</Text>
-                            <Text size="18px" weight="300" ><A>Paper</A> / <A target="_blank" to="https://crl-workshop.github.io/">Workshop</A></Text>
+                            <Text size="15px" weight="300" mb="10px" opacity="0.8">Yeon-Ji Song, Hyunseo Kim, <span style={{fontWeight: 600}}>Suhyung Choi</span>, Jin-Hwa Kim*, Byoung-Tak Zhang*.</Text>
+                            <Text size="15px" weight="300" mb="10px">NeurIPS Workshop on Causal Representation Learning, 2023</Text>
+                            <Text size="15px" weight="300" ><A>Paper</A> / <A target="_blank" to="https://crl-workshop.github.io/">Workshop</A></Text>
                         </Col>
                     </Row>
                     <Row align="center" mt="30px">
-                        <Flex width="170px" height="120px" overflow="hidden" br="20px" align="center" justify="center">
-                            <Image width="100%" height="100%" src={qlid} />
+                        <Flex width="150px" height="100px" overflow="hidden" br="20px" align="center" justify="center">
+                            <Image width="100%" height="100%" of="cover" src={qlid} />
                         </Flex>
                         <Col ml="30px">
                             <Text size="18px" weight="600" mb="10px"><A>Causal Dynamics Learning with Quantized Local Independence Discovery</A></Text>
-                            <Text size="18px" weight="300" mb="10px" opacity="0.8">Inwoo Hwang, Yunhyeok Kwak, <span style={{fontWeight: 600}}>Suhyung Choi</span>, Byoung-Tak Zhang*, <A target="_blank" to="https://www.sanghacklee.me/">Sanghack Lee*</A>.</Text>
-                            <Text size="18px" weight="300" mb="10px"><span style={{fontWeight: 600}}>ICML Workshop</span> on Spurious Correlations, Invariance, and Stability, 2023</Text>
-                            <Text size="18px" weight="300" ><A>Paper</A> / <A target="_blank" to="https://sites.google.com/view/scis-workshop-23/home">Workshop</A></Text>
+                            <Text size="15px" weight="300" mb="10px" opacity="0.8">Inwoo Hwang, Yunhyeok Kwak, <span style={{fontWeight: 600}}>Suhyung Choi</span>, Byoung-Tak Zhang*, <A target="_blank" to="https://www.sanghacklee.me/">Sanghack Lee*</A>.</Text>
+                            <Text size="15px" weight="300" mb="10px">ICML Workshop on Spurious Correlations, Invariance, and Stability, 2023</Text>
+                            <Text size="15px" weight="300" ><A>Paper</A> / <A target="_blank" to="https://sites.google.com/view/scis-workshop-23/home">Workshop</A></Text>
                         </Col>
                     </Row>
                 </Col>
                 <Col mb="50px">
-                    <Text size="25px" mb="30px" weight="600" style={{alignSelf: "center"}}>Experiences</Text>
+                    <Text size="25px" mb="30px" weight="600" style={{alignSelf: "flex-start"}}>Teaching Experiences</Text>
                     <Text size="18px" weight="600" mb="10px">Core Computing: Thinking with Computers (L0444.000500)</Text>
-                    <Text size="18px" weight="300"><span style={{fontWeight: 600}}>Teaching Assistant</span>, Seoul National University, 2023 Spring</Text>
+                    <Text size="15px" weight="300"><span style={{fontWeight: 600}}>Teaching Assistant</span>, Seoul National University, 2023 Spring</Text>
                 </Col>
             </Col>
         </Screen>

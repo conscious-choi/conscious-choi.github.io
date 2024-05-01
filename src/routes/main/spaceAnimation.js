@@ -44,8 +44,13 @@ export default function init(elementId) {
     let sprite = new THREE.TextureLoader().load( 'star.png' );
     let starMaterial = new THREE.PointsMaterial({
         color: 0xaaaaaa,
-        size: 0.7,
-        map: sprite
+        size: 1,
+        map: sprite,
+        transparent: true,  // Enable transparency
+        alphaTest: 0.5,      // Configure alpha testing (discard pixels with alpha less than this value)
+        depthTest: true,
+        depthWrite: false,
+        sizeAttenuation: true
     });
 
     stars = new THREE.Points(starGeo,starMaterial);
@@ -82,18 +87,18 @@ function animate() {
 	
     for ( var i = 0; i < positionAttribute.count; i ++ ) {
         vertex.fromBufferAttribute( positionAttribute, i );
-        velocites[i] += accelerations[i] * 0.01
-        vertex.y -= velocites[i] * 0.01;
+        velocites[i] += accelerations[i] * 0.1
+        vertex.y -= velocites[i] * 0.1;
         
         if (vertex.y < -200) {
-            vertex.y = 200;
+            vertex.y = 400;
             velocites[i] = 0;
         }
         positionAttribute.setXYZ( i, vertex.x, vertex.y, vertex.z );
     }
 
     positionAttribute.needsUpdate = true;
-    stars.rotation.y += 0.002 * 0.1;
+    stars.rotation.y += 0.0017 * 0.2;
 
     renderer.render(scene, camera);
     requestAnimationFrame(animate);

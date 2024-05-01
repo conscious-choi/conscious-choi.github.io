@@ -8,7 +8,7 @@ export const MainPage = ({}) => {
     const {goMain, showMain, setShowMain} = MainEvent();
     useEffect(() => {
         const mainer = () => {
-            setTimeout(() => goMain && setShowMain(true), 1000);
+            setTimeout(() => goMain && setShowMain(true), 700);
         }
         mainer();
     }, [goMain])

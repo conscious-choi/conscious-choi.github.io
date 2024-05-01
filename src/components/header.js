@@ -6,6 +6,7 @@ import { MainEvent } from '../contexts';
 export const Header = ({}) => {
     const {goMain, showMain} = MainEvent();
     const [opacity, setOpacity] = useState(0);
+    
     useEffect(() => {
         const opaciter = () => {
             if (showMain) {
@@ -18,7 +19,7 @@ export const Header = ({}) => {
     }, [goMain, showMain]);
     return (
         <>
-            {goMain && <Row width="100vw" align="center" justify="space-between" ptb="20px" prl="25px" position="fixed" opacity={opacity} style={{left: 0, top: 0, transition: "all 500ms"}} zIndex={10000}>
+            {goMain && <Row width="100vw" align="center" justify="space-between" ptb="20px" prl="35px" position="fixed" opacity={opacity} style={{left: 0, top: 0, transition: "all 500ms"}} zIndex={10000}>
                 <Link to="/">
                     <Logo width={50} height={55} />
                 </Link>
@@ -29,7 +30,7 @@ export const Header = ({}) => {
                         </Text>
                     </Link>
                     <Link to="/about">
-                        <Text size="15px" weight="300">
+                        <Text size="15px" weight="500">
                             ABOUT
                         </Text>
                     </Link>
