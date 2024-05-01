@@ -63,7 +63,7 @@ export const About = () => {
                             <Text size="18px" weight="300" ><A>Paper</A> / <A target="_blank" to="https://crl-workshop.github.io/">Workshop</A></Text>
                         </Col>
                     </Row>
-                    <Row align="center">
+                    <Row align="center" mt="30px">
                         <Flex width="170px" height="120px" overflow="hidden" br="20px" align="center" justify="center">
                             <Image width="100%" height="100%" src={qlid} />
                         </Flex>
