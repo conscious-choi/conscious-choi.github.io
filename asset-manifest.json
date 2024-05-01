@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/static/js/main.91eec34a.js",
+    "main.js": "/static/js/main.25e1a166.js",
     "static/media/causal_dynamics.png": "/static/media/causal_dynamics.9ef627865953b03cecdb.png",
     "static/media/qlid.png": "/static/media/qlid.b160df3b5f5578da5561.png",
     "index.html": "/index.html",
-    "main.91eec34a.js.map": "/static/js/main.91eec34a.js.map"
+    "main.25e1a166.js.map": "/static/js/main.25e1a166.js.map"
   },
   "entrypoints": [
-    "static/js/main.91eec34a.js"
+    "static/js/main.25e1a166.js"
   ]
 }
