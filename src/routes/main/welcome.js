@@ -110,17 +110,17 @@ export const CodeCursor = ({goMain, setGoMain}) => {
 
                     typewriter.typeString(',')
                     .pauseFor(1000)
-                    typewriter.typeString(' something very misterious?')
+                    typewriter.typeString(' something very mysterious?')
                     .pauseFor(1800)
                     .deleteChars(27)
                     .pauseFor(500)
 
-                    typewriter.typeString(' maybe the key of ourselves?')
+                    typewriter.typeString(' maybe the key to ourselves?')
                     .pauseFor(1800)
                     .deleteChars(28)
                     .pauseFor(800)
 
-                    typewriter.typeString(' or maybe a key further to the universe?')
+                    typewriter.typeString(' or maybe a key to the universe?')
                     .pauseFor(2500)
                     .deleteAll()
                     .pauseFor(800)
@@ -140,21 +140,21 @@ export const CodeCursor = ({goMain, setGoMain}) => {
                     typewriter.typeString(', ')
                     .pauseFor(300)
 
-                    typewriter.typeString('all of those may not be exist.')
+                    typewriter.typeString('all of those may not exist.')
                     .pauseFor(1500)
                     .deleteAll()
                     .pauseFor(800)
 
-                    typewriter.typeString("But we are not yet to find those.")
+                    typewriter.typeString("But we have not yet founnd those.")
                     .pauseFor(1000)
                     .deleteAll()
                     .pauseFor(500)
 
-                    typewriter.typeString("Wouldn't be amazing to discover it?")
+                    typewriter.typeString("Wouldn't it be amazing to discover it?")
                     .pauseFor(1800)
                     .deleteAll()
 
-                    typewriter.typeString("No hesitation for that!")
+                    typewriter.typeString("No doubt about that!")
                     .pauseFor(2000)
                     .deleteAll()
 
