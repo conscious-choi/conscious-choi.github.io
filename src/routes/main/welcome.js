@@ -11,7 +11,7 @@ export const Welcome = ({}) => {
     return (
         <Screen height="100%" align="center" justify="center" opacity={!goMain ? 1 : 0} position="absolute" style={{backgroundColor: goMain && "white"}} transition='all 500ms ease-in-out'>
             <CodeCursor goMain={goMain} setGoMain={setGoMain} />
-            {/* <VoyageBackground id={"welcome"} /> */}
+            <VoyageBackground id={"welcome"} />
             <SkipBtn setGoMain={setGoMain} />
         </Screen>
     )
