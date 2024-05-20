@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.3135a3b3.js",
-    "static/media/causal_dynamics.png": "/static/media/causal_dynamics.9ef627865953b03cecdb.png",
-    "static/media/qlid.png": "/static/media/qlid.b160df3b5f5578da5561.png",
+    "main.js": "/static/js/main.5cbff57a.chunk.js",
+    "main.js.map": "/static/js/main.5cbff57a.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.856d7025.chunk.js": "/static/js/2.856d7025.chunk.js",
+    "static/js/2.856d7025.chunk.js.map": "/static/js/2.856d7025.chunk.js.map",
     "index.html": "/index.html",
-    "main.3135a3b3.js.map": "/static/js/main.3135a3b3.js.map"
-  },
-  "entrypoints": [
-    "static/js/main.3135a3b3.js"
-  ]
+    "precache-manifest.c508a426909abdbc8cb22bc2f99c43a2.js": "/precache-manifest.c508a426909abdbc8cb22bc2f99c43a2.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/causal_dynamics.png": "/static/media/causal_dynamics.b53094b3.png",
+    "static/media/qlid.png": "/static/media/qlid.b885f7d4.png"
+  }
 }
