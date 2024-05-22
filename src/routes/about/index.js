@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {Flex, Row, Text, Screen, Col, Image, Link} from "../../components";
 import qlid from "../../contents/about/qlid.png"
 import causal_dynamcis from "../../contents/about/causal_dynamics.png"
+import ock from "../../contents/about/ock.png"
 
 const A = styled.a`
     cursor: pointer;
@@ -60,26 +61,37 @@ export const About = () => {
                     <Text size="15px" weight="300" lh="1.5" mb="10px">BBA, Digital Business in Division of Convergence Business (First Major, Sejong)</Text>
                     <Text style={{fontStyle: "italic"}} opacity="0.7">2018 ~ 2022</Text>
                 </Col>
-                <Col mb="70px">
+                <Col mb="40px">
                     <Text size="25px" mb="30px" weight="600" style={{alignSelf: "flex-start"}}>Publications</Text>
-                    <Row align="center">
+                    {/* <Row align="center" mb="30px">
+                        <Flex width="150px" height="100px" overflow="hidden" br="20px" align="center" bg="white" justify="center">
+                            <Image width="100%" height="100%" of="cover" src={ock} />
+                        </Flex>
+                        <Col ml="30px">
+                            <Text size="18px" weight="600" mb="10px"><A>Unsupervised Dynamics Prediction with Object-Centric Kinematics</A></Text>
+                            <Text size="15px" weight="300" mb="10px" color="rgb(200, 200, 200)">Yeon-Ji Song, <span style={{fontWeight: 400, color: "white"}}>Suhyung Choi</span>, Jaein Kim, Jin-Hwa Kim*, Byoung-Tak Zhang*.</Text>
+                            <Text size="15px" weight="300" mb="10px">Under Review</Text>
+                            <Text size="15px" weight="300" ><A target="_blank" href="https://arxiv.org/abs/2404.18423">Arxiv</A></Text>
+                        </Col>
+                    </Row> */}
+                    <Row align="center" mb="30px">
                         <Flex width="150px" height="100px" overflow="hidden" br="20px" align="center" justify="center">
                             <Image width="100%" height="100%" of="cover" src={causal_dynamcis} />
                         </Flex>
                         <Col ml="30px">
                             <Text size="18px" weight="600" mb="10px"><A>Learning Object Appearance and Motion Dynamics with Object-Centric Representations</A></Text>
-                            <Text size="15px" weight="300" mb="10px" opacity="0.8">Yeon-Ji Song, Hyunseo Kim, <span style={{fontWeight: 600}}>Suhyung Choi</span>, Jin-Hwa Kim*, Byoung-Tak Zhang*.</Text>
+                            <Text size="15px" weight="300" mb="10px" color="rgb(200, 200, 200)">Yeon-Ji Song, Hyunseo Kim, <span style={{fontWeight: 400, color: "white"}}>Suhyung Choi</span>, Jin-Hwa Kim*, Byoung-Tak Zhang*.</Text>
                             <Text size="15px" weight="300" mb="10px">NeurIPS Workshop on Causal Representation Learning, 2023</Text>
-                            <Text size="15px" weight="300" ><A>Paper</A> / <A target="_blank" href="https://crl-workshop.github.io/">Workshop</A></Text>
+                            <Text size="15px" weight="300" ><A target="_blank" href="https://openreview.net/pdf?id=yzKb3uFiir">Paper</A> / <A target="_blank" href="https://neurips.cc/virtual/2023/77516">Workshop</A></Text>
                         </Col>
                     </Row>
-                    <Row align="center" mt="30px">
+                    <Row align="center" mb="30px">
                         <Flex width="150px" height="100px" overflow="hidden" br="20px" align="center" justify="center">
                             <Image width="100%" height="100%" of="cover" src={qlid} />
                         </Flex>
                         <Col ml="30px">
                             <Text size="18px" weight="600" mb="10px"><A>Causal Dynamics Learning with Quantized Local Independence Discovery</A></Text>
-                            <Text size="15px" weight="300" mb="10px" opacity="0.8">Inwoo Hwang, Yunhyeok Kwak, <span style={{fontWeight: 600}}>Suhyung Choi</span>, Byoung-Tak Zhang*, <A target="_blank" href="https://www.sanghacklee.me/">Sanghack Lee*</A>.</Text>
+                            <Text size="15px" weight="300" mb="10px" color="rgb(200, 200, 200)">Inwoo Hwang, Yunhyeok Kwak, <span style={{fontWeight: 400, color: "white"}}>Suhyung Choi</span>, Byoung-Tak Zhang*, <A target="_blank" href="https://www.sanghacklee.me/" style={{color: "rgb(200, 200, 200)"}}>Sanghack Lee*</A>.</Text>
                             <Text size="15px" weight="300" mb="10px">ICML Workshop on Spurious Correlations, Invariance, and Stability, 2023</Text>
                             <Text size="15px" weight="300" ><A>Paper</A> / <A target="_blank" href="https://sites.google.com/view/scis-workshop-23/home">Workshop</A></Text>
                         </Col>
