@@ -63,44 +63,58 @@ export const About = () => {
                 </Col>
                 <Col mb="40px">
                     <Text size="25px" mb="30px" weight="600" style={{alignSelf: "flex-start"}}>Publications</Text>
-                    {/* <Row align="center" mb="30px">
-                        <Flex width="150px" height="100px" overflow="hidden" br="20px" align="center" bg="white" justify="center">
+                    <Row align="center" mb="30px">
+                        <Flex width="150px" height="100px" overflow="hidden" br="17px" align="center" bg="white" justify="center">
                             <Image width="100%" height="100%" of="cover" src={ock} />
                         </Flex>
                         <Col ml="30px">
-                            <Text size="18px" weight="600" mb="10px"><A>Unsupervised Dynamics Prediction with Object-Centric Kinematics</A></Text>
+                            <Text size="17px" weight="400" mb="12.5px"><A>Unsupervised Dynamics Prediction with Object-Centric Kinematics</A></Text>
                             <Text size="15px" weight="300" mb="10px" color="rgb(200, 200, 200)">Yeon-Ji Song, <span style={{fontWeight: 400, color: "white"}}>Suhyung Choi</span>, Jaein Kim, Jin-Hwa Kim*, Byoung-Tak Zhang*.</Text>
-                            <Text size="15px" weight="300" mb="10px">Under Review</Text>
-                            <Text size="15px" weight="300" ><A target="_blank" href="https://arxiv.org/abs/2404.18423">Arxiv</A></Text>
-                        </Col>
-                    </Row> */}
-                    <Row align="center" mb="30px">
-                        <Flex width="150px" height="100px" overflow="hidden" br="20px" align="center" justify="center">
-                            <Image width="100%" height="100%" of="cover" src={causal_dynamcis} />
-                        </Flex>
-                        <Col ml="30px">
-                            <Text size="18px" weight="600" mb="10px"><A>Learning Object Appearance and Motion Dynamics with Object-Centric Representations</A></Text>
-                            <Text size="15px" weight="300" mb="10px" color="rgb(200, 200, 200)">Yeon-Ji Song, Hyunseo Kim, <span style={{fontWeight: 400, color: "white"}}>Suhyung Choi</span>, Jin-Hwa Kim*, Byoung-Tak Zhang*.</Text>
-                            <Text size="15px" weight="300" mb="10px">NeurIPS Workshop on Causal Representation Learning, 2023</Text>
-                            <Text size="15px" weight="300" ><A target="_blank" href="https://openreview.net/pdf?id=yzKb3uFiir">Paper</A> / <A target="_blank" href="https://neurips.cc/virtual/2023/77516">Workshop</A></Text>
+                            <Row>
+                                <Text size="15px" weight="300" mb="10px">Under Review</Text>
+                                <Text ml="10px" mr="10px">|</Text>
+                                <Text size="15px" weight="300" ><A target="_blank" href="https://arxiv.org/abs/2404.18423">Arxiv</A></Text>
+                            </Row>
                         </Col>
                     </Row>
                     <Row align="center" mb="30px">
-                        <Flex width="150px" height="100px" overflow="hidden" br="20px" align="center" justify="center">
+                        <Flex width="150px" height="100px" overflow="hidden" br="17px" align="center" justify="center">
+                            <Image width="100%" height="100%" of="cover" src={causal_dynamcis} />
+                        </Flex>
+                        <Col ml="30px">
+                            <Text size="17px" weight="400" mb="12.5px"><A>Learning Object Appearance and Motion Dynamics with Object-Centric Representations</A></Text>
+                            <Text size="15px" weight="300" mb="10px" color="rgb(200, 200, 200)">Yeon-Ji Song, Hyunseo Kim, <span style={{fontWeight: 400, color: "white"}}>Suhyung Choi</span>, Jin-Hwa Kim*, Byoung-Tak Zhang*.</Text>
+                            <Row>
+                                <Text size="15px" weight="300" mb="10px">NeurIPS Workshop on Causal Representation Learning, 2023</Text>
+                                <Text ml="10px" mr="10px">|</Text>
+                                <Text size="15px" weight="300" ><A target="_blank" href="https://openreview.net/pdf?id=yzKb3uFiir">Paper</A> / <A target="_blank" href="https://neurips.cc/virtual/2023/77516">Workshop</A></Text>
+                            </Row>
+                        </Col>
+                    </Row>
+                    <Row align="center" mb="30px">
+                        <Flex width="150px" height="100px" overflow="hidden" br="17px" align="center" justify="center">
                             <Image width="100%" height="100%" of="cover" src={qlid} />
                         </Flex>
                         <Col ml="30px">
-                            <Text size="18px" weight="600" mb="10px"><A>Causal Dynamics Learning with Quantized Local Independence Discovery</A></Text>
+                            <Text size="17px" weight="400" mb="12.5px" lh="1.3"><A target="_blank" href="https://openreview.net/pdf?id=mrd4e8ZJjm">Fine-Grained Causal Dynamics Learning with Quantization for Improving Robustness <br></br>in Reinforcement Learning</A></Text>
                             <Text size="15px" weight="300" mb="10px" color="rgb(200, 200, 200)">Inwoo Hwang, Yunhyeok Kwak, <span style={{fontWeight: 400, color: "white"}}>Suhyung Choi</span>, Byoung-Tak Zhang*, <A target="_blank" href="https://www.sanghacklee.me/" style={{color: "rgb(200, 200, 200)"}}>Sanghack Lee*</A>.</Text>
-                            <Text size="15px" weight="300" mb="10px">ICML Workshop on Spurious Correlations, Invariance, and Stability, 2023</Text>
-                            <Text size="15px" weight="300" ><A>Paper</A> / <A target="_blank" href="https://sites.google.com/view/scis-workshop-23/home">Workshop</A></Text>
+                            <Row>
+                                <Text size="15px" weight="300" mb="10px">International Conference on Machine Learning (ICML), 2024</Text>
+                                <Text ml="10px" mr="10px">|</Text>
+                                <Text size="15px" weight="300"><A target="_blank" href="https://openreview.net/pdf?id=mrd4e8ZJjm">Paper</A></Text>
+                            </Row>
+                            {/* <Row>
+                                <Text size="15px" weight="300">NeurIPS Workshop on Generalization in Planning, 2023</Text>
+                                <Text size="15px" weight="300" ml="10px"><A target="_blank" href="https://sites.google.com/view/scis-workshop-23/home">Workshop</A></Text>
+                            </Row> */}
+                            
                         </Col>
                     </Row>
                 </Col>
                 <Col mb="50px">
                     <Text size="25px" mb="30px" weight="600" style={{alignSelf: "flex-start"}}>Teaching Experiences</Text>
-                    <Text size="18px" weight="600" mb="10px">Core Computing: Thinking with Computers (L0444.000500)</Text>
-                    <Text size="15px" weight="300"><span style={{fontWeight: 600}}>Teaching Assistant</span>, Seoul National University, 2023 Spring</Text>
+                    <Text size="18px" weight="400" mb="10px">Core Computing: Thinking with Computers (L0444.000500)</Text>
+                    <Text size="15px" weight="300"><span style={{fontWeight: 400}}>Teaching Assistant</span>, Seoul National University, 2023 Spring</Text>
                 </Col>
             </Col>
         </Screen>
