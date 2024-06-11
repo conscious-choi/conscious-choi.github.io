@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.js": "/static/js/main.5cbff57a.chunk.js",
-    "main.js.map": "/static/js/main.5cbff57a.chunk.js.map",
+    "main.js": "/static/js/main.0c40777c.chunk.js",
+    "main.js.map": "/static/js/main.0c40777c.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.856d7025.chunk.js": "/static/js/2.856d7025.chunk.js",
-    "static/js/2.856d7025.chunk.js.map": "/static/js/2.856d7025.chunk.js.map",
+    "static/js/2.62441fd6.chunk.js": "/static/js/2.62441fd6.chunk.js",
+    "static/js/2.62441fd6.chunk.js.map": "/static/js/2.62441fd6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c508a426909abdbc8cb22bc2f99c43a2.js": "/precache-manifest.c508a426909abdbc8cb22bc2f99c43a2.js",
+    "precache-manifest.f8490c5c36d1b3f96336f0b8b164dabc.js": "/precache-manifest.f8490c5c36d1b3f96336f0b8b164dabc.js",
     "service-worker.js": "/service-worker.js",
     "static/media/causal_dynamics.png": "/static/media/causal_dynamics.b53094b3.png",
+    "static/media/ock.png": "/static/media/ock.a49517e6.png",
     "static/media/qlid.png": "/static/media/qlid.b885f7d4.png"
   }
 }
