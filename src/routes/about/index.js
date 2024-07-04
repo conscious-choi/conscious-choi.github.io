@@ -68,8 +68,8 @@ export const About = () => {
                             <Image width="100%" height="100%" of="cover" src={ock} />
                         </Flex>
                         <Col ml="30px">
-                            <Text size="17px" weight="400" mb="12.5px"><A>Unsupervised Dynamics Prediction with Object-Centric Kinematics</A></Text>
-                            <Text size="15px" weight="300" mb="10px" color="rgb(200, 200, 200)">Yeon-Ji Song, <span style={{fontWeight: 400, color: "white"}}>Suhyung Choi</span>, Jaein Kim, Jin-Hwa Kim*, Byoung-Tak Zhang*.</Text>
+                            <Text size="17px" weight="500" mb="12.5px"><A>Unsupervised Dynamics Prediction with Object-Centric Kinematics</A></Text>
+                            <Text size="15px" weight="300" mb="10px" color="rgb(200, 200, 200)">Yeon-Ji Song, <span style={{fontWeight: 500, color: "white"}}>Suhyung Choi</span>, Jaein Kim, Jin-Hwa Kim*, Byoung-Tak Zhang*.</Text>
                             <Row>
                                 <Text size="15px" weight="300" mb="10px">Under Review</Text>
                                 <Text ml="10px" mr="10px">|</Text>
@@ -82,8 +82,8 @@ export const About = () => {
                             <Image width="100%" height="100%" of="cover" src={causal_dynamcis} />
                         </Flex>
                         <Col ml="30px">
-                            <Text size="17px" weight="400" mb="12.5px"><A>Learning Object Appearance and Motion Dynamics with Object-Centric Representations</A></Text>
-                            <Text size="15px" weight="300" mb="10px" color="rgb(200, 200, 200)">Yeon-Ji Song, Hyunseo Kim, <span style={{fontWeight: 400, color: "white"}}>Suhyung Choi</span>, Jin-Hwa Kim*, Byoung-Tak Zhang*.</Text>
+                            <Text size="17px" weight="500" mb="12.5px"><A>Learning Object Appearance and Motion Dynamics with Object-Centric Representations</A></Text>
+                            <Text size="15px" weight="300" mb="10px" color="rgb(200, 200, 200)">Yeon-Ji Song, Hyunseo Kim, <span style={{fontWeight: 500, color: "white"}}>Suhyung Choi</span>, Jin-Hwa Kim*, Byoung-Tak Zhang*.</Text>
                             <Row>
                                 <Text size="15px" weight="300" mb="10px">NeurIPS Workshop on Causal Representation Learning, 2023</Text>
                                 <Text ml="10px" mr="10px">|</Text>
@@ -96,8 +96,8 @@ export const About = () => {
                             <Image width="100%" height="100%" of="cover" src={qlid} />
                         </Flex>
                         <Col ml="30px">
-                            <Text size="17px" weight="400" mb="12.5px" lh="1.3"><A target="_blank" href="https://openreview.net/pdf?id=mrd4e8ZJjm">Fine-Grained Causal Dynamics Learning with Quantization for Improving Robustness <br></br>in Reinforcement Learning</A></Text>
-                            <Text size="15px" weight="300" mb="10px" color="rgb(200, 200, 200)">Inwoo Hwang, Yunhyeok Kwak, <span style={{fontWeight: 400, color: "white"}}>Suhyung Choi</span>, Byoung-Tak Zhang*, <A target="_blank" href="https://www.sanghacklee.me/" style={{color: "rgb(200, 200, 200)"}}>Sanghack Lee*</A>.</Text>
+                            <Text size="17px" weight="500" mb="12.5px"><A target="_blank" href="https://openreview.net/pdf?id=mrd4e8ZJjm">Fine-Grained Causal Dynamics Learning with Quantization for Improving Robustness in Reinforcement Learning</A></Text>
+                            <Text size="15px" weight="300" mb="10px" color="rgb(200, 200, 200)">Inwoo Hwang, Yunhyeok Kwak, <span style={{fontWeight: 500, color: "white"}}>Suhyung Choi</span>, Byoung-Tak Zhang*, <A target="_blank" href="https://www.sanghacklee.me/" style={{color: "rgb(200, 200, 200)"}}>Sanghack Lee*</A>.</Text>
                             <Row>
                                 <Text size="15px" weight="300" mb="10px">International Conference on Machine Learning (ICML), 2024</Text>
                                 <Text ml="10px" mr="10px">|</Text>
@@ -113,8 +113,8 @@ export const About = () => {
                 </Col>
                 <Col mb="50px">
                     <Text size="25px" mb="30px" weight="600" style={{alignSelf: "flex-start"}}>Teaching Experiences</Text>
-                    <Text size="18px" weight="400" mb="10px">Core Computing: Thinking with Computers (L0444.000500)</Text>
-                    <Text size="15px" weight="300"><span style={{fontWeight: 400}}>Teaching Assistant</span>, Seoul National University, 2023 Spring</Text>
+                    <Text size="18px" weight="500" mb="10px">Core Computing: Thinking with Computers (L0444.000500)</Text>
+                    <Text size="15px" weight="300"><span style={{fontWeight: 500}}>Teaching Assistant</span>, Seoul National University, 2023 Spring</Text>
                 </Col>
             </Col>
         </Screen>
